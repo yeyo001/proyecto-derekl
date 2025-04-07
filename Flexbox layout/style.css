@@ -1,0 +1,211 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    background-color:  #0009;
+}
+    
+.header {
+   height: 100vh;
+   box-sizing: border-box;
+   background: url(kanyheader.webp);
+   background-size: 210vh;
+   background-repeat: no-repeat;
+   color: antiquewhite;
+   font-size: 20px;
+   display: flex;
+}
+
+.header__overlay {
+   height: 100vh;
+   width: 100vw;
+   background-color:  #0009;
+   position: absolute;
+   z-index: 3;
+}
+
+.header__container {
+    z-index: 10;
+    position: relative;
+    margin: 150px;
+    margin-top: 300px;
+}
+
+h1 {
+    margin: 0;
+    text-wrap: balance;
+}
+
+.box {
+    background-color: #2a2d3fd2;
+    width: 400px;
+    height: 200px;
+    justify-content: space-evenly;
+    display: flex;
+    flex-flow: column;
+    border-radius: 6px;
+    border: antiquewhite 6px solid ;
+    border-style: dotted;
+    margin-left: 20px;
+}
+
+.item {
+    justify-content: space-evenly;
+    display: flex;
+    margin: 0 20px;
+    color: antiquewhite;
+}
+
+.hiphop-cards, .rnb-cards {
+    text-align: center;
+    margin: 50px;
+}
+
+.card {
+    background: #0009;
+    text-align: center;
+    width: 250px;
+    padding: 50px;
+    box-shadow: 0px 20px 45px #000;
+    border-radius: 8px;
+    display: inline-block;
+    color: antiquewhite;
+    justify-content: space-evenly;
+}
+
+.cardkanye {
+    background: antiquewhite;
+    text-align: center;
+    width: 250px;
+    padding: 50px;
+    box-shadow: 0px 20px 45px #000;
+    border-radius: 8px;
+    display: inline-block;
+    margin: 35px auto;  /* Usamos 'margin: 35px auto' para centrarlo */
+    color: #0009;
+    font-family: avigea;
+    margin-bottom: 50px;  /* Ajusta el margen inferior */
+}
+
+
+.card_title {
+    font-size: 22px;
+    margin: 0;
+}
+
+.card_subtitle {
+    font-size: 13px;
+    font-weight: 100;
+    letter-spacing: 2px;
+    margin: 0;
+    margin-top: 5px;
+}
+
+.card_content {
+    font-size: 13px;
+    padding: 10px;
+}
+
+.card_img {
+    width: 180px;
+    border-radius: 200px;
+}
+
+.header2 {
+    height: 100vh;
+    box-sizing: border-box;
+    background: url(Brent-faiyaz.jpg);
+    background-size: 210vh;
+    background-repeat: no-repeat;
+    color: antiquewhite;
+    font-size: 20px;
+    display: flex;
+ }
+
+ /*NAVBAR*/
+
+ .separador {
+    background-color: #0009;
+    width: 100vw;
+    height: 50px;
+    margin: auto;
+    position: sticky;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav {
+   margin: auto;
+   position: sticky;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   top: 0;
+}
+
+.nav__list {
+    margin: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+}
+
+.nav__item {
+    display: inline-block;
+}
+
+.nav__item:hover {
+  background-color:  #0009;
+  border-radius: 20px;
+}
+
+.nav__link {
+    color: antiquewhite;
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 0;
+    transition: background-color
+    0.3s, border-radius 0.24s ;
+}
+
+.link--button {
+    color:  #2a2d3fd2;
+    background-color: antiquewhite;
+    padding: 4px 18px;
+    border: 1px solid antiquewhite;
+    border-radius: 10px;
+}
+
+.link--button:hover {
+    background: transparent;
+    color: antiquewhite;
+}
+
+@media screen and (max-width:580px) {
+    .header {
+        height: 30vh;
+        background-image: url(Brent-faiyaz.jpg);
+        box-sizing: border-box;
+        color: antiquewhite;
+        font-size: 15px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header__overlay {
+        width: 100vw;
+        height: 30vh;
+        background-color:  #0009;
+        position: absolute;
+        z-index: 3;
+    }
+
+    .header__container {
+        z-index: 10;
+        text-align: center;
+        margin: 0; /* Eliminar margen grande que empujaba el contenido */
+    }
+}
